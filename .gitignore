@@ -1,0 +1,7 @@
+# Ignorar a pasta venv
+projeto_carros/venv/
+
+# Ignorar o arquivo db.sqlite3
+projeto_carros/db.sqlite3
+
+manual

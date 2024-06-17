@@ -1,0 +1,48 @@
+PASSO A PASSO 
+
+1- INICIAR VENV:
+    Se não estiver instalado no linux - sudo apt install python3-venv
+    Rodar a venv linux - python3 -m venv venv
+    Rodar a venv windows - python -m venv venv
+    ativar linux - source venv/bin/activate
+    ativar windows - .\venv\Scripts\activate
+
+2- INSTALAR DJANGO  E  INICIAR PROJETO:
+    pip install django 
+    django-admin --version
+    django-admin start project app .
+
+3- START APP:
+    python manage.py startapp 'nome' (obs: add o 'nome' dentro de INSTALLED_APPS em "settings.py")
+
+4- MAKEMIGRATIONS E MIGRATE
+    olha app por app e monta arquivos de código python que tem comandos para o database - python manage.py makemigrations
+    olha todos os arquivos migrations e cria as estruturas de databases - python manage.py migrate
+    !(sempre fazer isso se alterar os models)!
+
+5- CRIAR SUPER USUÁRIO
+    python manage.py createsuperuser (Dutra / dutrafelipe77@gmail.com / centoetres)
+
+6- CRIAR MODELS
+    criar classes em models.py 
+
+7- ATUALIZAR ADMIN.PY
+    importar classe do models - from 'nome-da-pasta-do-projeto'.models import 'nome-da-classe'
+    
+    class CarAdmin(admin.ModelAdmin):
+        list_display = ('model', 'brand', 'factory_year', 'model_year', 'value')
+        search_fields = ('model', 'brand')
+
+    admin.site.register(Cars, CarAdmin)
+
+8- LINKAR VIEWS E URLS.PY 
+
+9- CRIAR PASTA TEMPLATES DENTRO DA PASTA DO PROJETO E CRIAR O HMTL PARA LINKAR COM A VIEWS
+
+10- IMPORTAR A CLASSE NAS VIEWS E ATUALIZAR O TEMPLATE
+
+11- OPCIONAL: CRIAR PASTA ACCOUNTS PARA GUARDAR USERS
+
+12- HABILITAR SIGNALS 
+    criar um arquivo chamado signals.py
+    atualizar apps.py com a função ready e importar signals
