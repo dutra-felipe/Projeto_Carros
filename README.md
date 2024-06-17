@@ -11,7 +11,7 @@
 
 ## Detalhes do projeto
 
-Realizei um projeto de gestão de automóveis, onde pude aprender muito sobre o framework do Django e orientação a objetos. Ainda estou no começo, mas feliz demais pelos objetivos alcançados até aqui! Espero que gostem!
+Realizei um projeto de gestão de automóveis, onde pude aprender muito sobre o framework do Django, orientação a objetos e bancos de dados como o SQLite e o PostgreSQL. Ainda estou no começo, mas feliz demais pelos objetivos alcançados até aqui! Espero que gostem!
 
 ## OBS: 
 Adicionei uma opção de automatizar a aplicação utilizando a API da OpenAI, mas está comentada pois era necessário realizar pagamentos para utilizá-la!
