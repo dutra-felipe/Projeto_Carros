@@ -21,7 +21,7 @@ PASSO A PASSO
     !(sempre fazer isso se alterar os models)!
 
 5- CRIAR SUPER USUÁRIO
-    python manage.py createsuperuser (Dutra / dutrafelipe77@gmail.com / centoetres)
+    python manage.py createsuperuser 
 
 6- CRIAR MODELS
     criar classes em models.py 
